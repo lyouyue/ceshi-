@@ -1,0 +1,5 @@
+1.用户点击http://sccyfs.net/weChatpay/mainServlet进入MainServlet.java
+2.MainServlet.java最后跳转到微信授权的页面，用户确认授权后微信回调 （backUri = "http://sccyfs.net/weChatpay/topayServlet"）到TopayServlet.java
+3.TopayServlet.java请求微信统一下单接口获取prepay_id，再生成H5调起支付api的参数并跳转到前端页面pay.jsp
+
+需要修改的地方 MainServlet.java 和 TopayServlet.java

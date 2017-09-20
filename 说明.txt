@@ -1,0 +1,6 @@
+1.先确保微信支付商户平台申请开通，配置好公众号网页支付服务器地址，以及安装证书设置支付秘钥等，详情看开发文档，附有相关图片。
+2.将项目导入myeclipse（我用的myeclipse10），填写MainServlet的（appid,appappsecret）,TopayServlet的（appid,appappsecret,partner,partnerkey）等相关参数，括号里必填。将所“你的域名”填写成实际域名。
+3.shop/index.jsp 修改“你的域名”为实际域名。
+4.修改database.properties文件，配置数据库信息，域名，数据库账号密码。
+5.修改index.html里的“你的域名”和appid，其他不动。
+6.导入sql文件(Mysql)dushu.sql
